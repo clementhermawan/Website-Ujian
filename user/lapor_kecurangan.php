@@ -10,8 +10,8 @@ $nama_user = $_SESSION['username'] ?? 'User';
 $pesan = "🚨 *Kecurangan Terdeteksi!*\n\n👤 User: $nama_user\n📛 Alasan: $alasan\n🕐 Waktu: " . date("Y-m-d H:i:s");
 
 // Ganti TOKEN & CHAT_ID
-$token = '8107624163:AAHgNibMxN7MdJ_ZW6ROopJ2cu1S2kCxWSw';
-$chat_id = '1285335092';  // Gunakan Chat ID yang sudah kamu dapatkan
+$token = 'YOUR_TOKEN_ID';
+$chat_id = 'YOUR_CHAT_ID';  // Gunakan Chat ID yang sudah kamu dapatkan
 
 // URL untuk kirim pesan ke Telegram bot
 $url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" . urlencode($pesan) . "&parse_mode=Markdown";
